@@ -25,6 +25,6 @@ ENV TZ=America/Sao_Paulo
 WORKDIR /app
 
 COPY --from=builder /app/init.sh /app
-COPY --from=builder /app/build/libs/backend-model-1.jar /app/
+COPY --from=builder /app/build/libs/tracflight-1.jar /app/
 
 ENTRYPOINT ["sh", "init.sh"]

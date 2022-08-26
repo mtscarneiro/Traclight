@@ -14,7 +14,7 @@ case "$COMMAND" in
     ;;
   web)
       exec java -Dspring.profiles.active=${ENVIRONMENT_NAME} \
-      -jar /app/backend-model*.jar \
+      -jar /app/tracflight*.jar \
       $COMMAND
     ;;
   *)
